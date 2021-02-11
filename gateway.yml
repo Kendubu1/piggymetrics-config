@@ -4,17 +4,17 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 1
 
 ribbon:
-  ReadTimeout: 20000
-  ConnectTimeout: 20000
+  ReadTimeout: 1
+  ConnectTimeout: 1
 
 zuul:
   ignoredServices: '*'
   host:
-    connect-timeout-millis: 20000
-    socket-timeout-millis: 20000
+    connect-timeout-millis: 1
+    socket-timeout-millis: 1
 
   routes:
     auth-service:
